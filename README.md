@@ -1,158 +1,131 @@
-# Awesome-Website-Optimization-A-B-Testing
+# Awesome Website Optimization & A/B Testing [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-# Awesome Website Optimization & A/B Testing
+> A curated directory of the best **Website Optimization, A/B Testing, Feature Flagging, and Conversion Rate Optimization (CRO)** platforms — covering enterprise SaaS/hosted solutions and top open-source tools for digital experimentation, multivariate testing, and product analytics.
 
-> A curated list of top Website Optimization and A/B Testing platforms — both SaaS/Hosted commercial solutions and open-source alternatives for experimentation, personalization, and conversion rate optimization.  
-> 🌟 Star this repo if you find it useful! 🌟
+🌟 **Star this repo if you find it useful for your experimentation and optimization tech stack!** 🌟
+
+---
+
+## 📈 Sector Overview & Market Dynamics
+
+The global **A/B Testing and Digital Experience Optimization software market** is estimated at approximately **$1.1 billion to $1.6 billion** (expanding toward **$3.5B+ to $4.8B** by the mid-2030s at an estimated CAGR of **12% to 15%**).
+
+The market exhibits **moderate-to-high fragmentation**:
+- **Enterprise & MarTech Consolidation:** At the high end, full-stack Digital Experience Platforms (DXPs) such as Optimizely, Dynamic Yield (Mastercard), and Wingify (which merged VWO and AB Tasty) dominate enterprise conversion optimization and multi-channel personalization.
+- **Product-Led & Developer Fragmentation:** Concurrently, rapid innovation across developer tooling, open-source feature flagging (e.g., PostHog, GrowthBook, Unleash), and warehouse-native analytics prevents "winner-take-all" concentration, enabling specialized, agile, and privacy-first self-hosted alternatives to capture substantial market share.
 
 ---
 
 ## 📋 Table of Contents
 
-- [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Zoho PageSense](#zoho-pagesense)
-  - [Optimizely](#optimizely)
-  - [VWO](#vwo)
-  - [AB Tasty](#ab-tasty)
-  - [Kameleoon](#kameleoon)
-  - [Unbounce](#unbounce)
-  - [Instapage](#instapage)
-  - [Crazy Egg](#crazy-egg)
-  - [Dynamic Yield](#dynamic-yield)
-- [Open-Source Software](#-open-source-software)
-  - [Controlvar](#controlvar)
-  - [Bucketeer](#bucketeer)
-  - [GrowthBook](#growthbook)
-  - [OpenReplay](#openreplay)
-  - [oss-clarity](#oss-clarity)
-  - [Localess](#localess)
-  - [modelab](#modelab)
-- [Comparison at a Glance](#-comparison-at-a-glance)
-- [Contributing](#-contributing)
+- [📈 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🟦 SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [🟩 Open-Source Software](#-open-source-software)
+- [📊 Feature Comparison Matrix](#-feature-comparison-matrix)
+- [🔍 Key Evaluation Criteria for CRO & Testing Tools](#-key-evaluation-criteria-for-cro--testing-tools)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
 
 ---
 
 ## 🟦 SaaS / Hosted Platforms
 
-Commercial, cloud-hosted Website Optimization and A/B Testing platforms. These are not open-source but are included as reference points for feature comparison.
+Below is a detailed breakdown of leading commercial Website Optimization and A/B Testing platforms, **sorted in descending order by company scale** (annual revenue / enterprise valuation).
 
-### Zoho PageSense
-**Type:** Conversion optimization suite with A/B testing  
-Zoho PageSense provides a free forever plan covering web analytics, heatmaps, session recording, and form analytics for up to 5,000 monthly tracked users. A/B testing, split URL testing, and personalization are locked to the Enterprise tier [citation:15][citation:20]. This tiered structure means teams can start with behavior analytics at zero cost but must upgrade to run actual experiments. Integrated within the broader Zoho ecosystem.
-
-### Optimizely
-**Type:** Enterprise experimentation platform  
-Optimizely is the long-standing enterprise standard for A/B testing and feature experimentation, with deep statistical rigor and a mature governance layer. It offers both client-side web experimentation and server-side feature flags. Pricing is enterprise-quoted and typically targets larger organizations with dedicated optimization teams.
-
-### VWO
-**Type:** All-in-one experimentation and optimization  
-VWO combines A/B testing, personalization, and behavioral analytics (heatmaps, recordings) in a single platform. G2's Fall 2025 report shows VWO Testing with 55% user adoption and an estimated 9-month payback period [citation:21]. Positioned as a more accessible alternative to Optimizely for mid-market teams.
-
-### AB Tasty
-**Type:** Experimentation and personalization  
-AB Tasty offers A/B testing, multivariate testing, and personalization with a modular pricing structure. G2 data shows 63% user adoption with a 10-month payback period [citation:21]. The platform has been consolidating its roadmap post-merger, though it remains a strong mid-market option with published entry pricing.
-
-### Kameleoon
-**Type:** Privacy-first experimentation  
-Kameleoon differentiates on compliance, with published GDPR, HIPAA, and CCPA tooling built for regulated industries rather than bolted on [citation:25]. Supports client-side and server-side experimentation alongside feature management. Published entry pricing starts at $495/month for up to 10 experiments and 50,000 tested visitors. G2 shows 62% adoption with a notably fast 5-month payback [citation:21].
-
-### Unbounce
-**Type:** Landing page builder with testing  
-Unbounce specializes in landing page creation with built-in A/B testing, smart traffic routing, and conversion intelligence. Popular for marketing teams running paid acquisition campaigns. Pricing is based on traffic volume and features.
-
-### Instapage
-**Type:** Enterprise landing page platform  
-Instapage provides landing page creation, personalization, and A/B testing at enterprise scale. Features include AMP pages, server-side rendering, and ad-to-page personalization. Positioned for marketing teams with significant paid media spend.
-
-### Crazy Egg
-**Type:** Behavioral analytics and testing  
-Crazy Egg provides heatmaps, scrollmaps, session recordings, and A/B testing (via integration or its own testing tools). Focused on understanding visitor behavior and identifying optimization opportunities. A more accessible price point than enterprise experimentation platforms.
-
-### Dynamic Yield
-**Type:** Personalization and experimentation  
-Dynamic Yield (now part of Mastercard) specializes in personalization across web, app, email, and physical channels, with A/B testing capabilities. G2 data shows 64% adoption with a 7-month payback period [citation:21]. Suited for organizations wanting cross-channel personalization rather than web-only testing.
+| Platform | Company Scale (Revenue / Valuation) | Starting Pricing (Paid Tiers) | Free Tier / Free Trial Limits | Key Optimization Capabilities & Focus |
+|:---|:---|:---|:---|:---|
+| **[Zoho PageSense](https://www.zoho.com/pagesense/)** | **~$1.5B Revenue** / ~$12.5B Valuation *(Zoho Corp)* | **$16/mo** (Engage tier, 10k MTU; billed annually) / **$30/mo** (Optimize/Enterprise tier for A/B testing) | **Free Forever plan**: 5,000 Monthly Tracked Users (MTUs), 1 project, 1 month data retention; includes heatmaps, session recordings, conversion goals, and form analytics. *(15-day free trial for paid tiers)* | Conversion rate optimization suite integrated within the Zoho ecosystem; heatmaps, session replays, funnel analysis, and visual A/B testing. |
+| **[Dynamic Yield](https://www.dynamicyield.com/)** | **~$98M Revenue** / Acquired for $327M *(Mastercard)* | **~$35,000/year** (Enterprise contract model; ~**$2,900/mo** billed annually) | **No free tier & no self-serve free trial**; evaluation requires sales-led enterprise demo and custom sandbox scoping. | Omnichannel personalization engine (Experience OS), algorithm-driven product recommendations, predictive segmentation, and cross-device A/B/n testing. |
+| **[Optimizely](https://www.optimizely.com/)** | **~$400M ARR** / Acquired for $1.16B *(Insight Partners)* | **~$36,000 to $40,000/year** (Web Experimentation entry tier; ~**$3,000 to $3,330/mo** billed annually) | **No free tier & no self-serve free trial**; access requires custom sales demo, technical scoping, and enterprise pilot agreement. | Enterprise standard for client-side and full-stack server-side experimentation, multi-page testing, Bayesian statistics, and digital experience governance. |
+| **[VWO](https://vwo.com/)** | **~$100M+ Combined Rev** / ~$500M Combined Val *(Wingify Group)* | **~$198 to $356/mo** (VWO Testing Growth tier, 10k–50k MTUs; billed annually) | **30-day free trial**: Full access to VWO Testing, heatmaps, and funnel analytics (up to 10k–50k test visitor allotment, no credit card required). Free forever plan retired. | All-in-one experimentation suite combining visual code-free editor, heatmaps, click maps, session replays, behavioral surveys, and multivariate testing. |
+| **[AB Tasty](https://www.abtasty.com/)** | **~$100M+ Combined Rev** / Merged with Wingify / ~$500M Val | **~$1,000 to $3,300/mo** (Entry modular package; billed annually at ~$12k–$40k/yr) | **No public self-serve free tier or free trial**; evaluations managed via custom demo and guided enterprise trial sandbox. | Client-side visual experimentation, server-side API flag management (Flagship), dynamic widgets, predictive segmentation, and multi-armed bandit allocation. |
+| **[Unbounce](https://unbounce.com/)** | **~$35M–$50M Revenue** / ~$350M Valuation | **$29/mo** (Starter plan; $22/mo billed annually); **$99–$149/mo** for dedicated Smart Traffic and A/B testing tiers | **14-day free trial**: Access to drag-and-drop page builder and AI copywriting; requires sign-up (no credit card required upfront on starter trial). | Landing page builder with built-in A/B split testing, AI conversion intelligence (Smart Traffic machine-learning router), and lead capture popups/sticky bars. |
+| **[Kameleoon](https://www.kameleoon.com/)** | **~$22M Revenue** / ~$330M Valuation | **$495/mo** (Prompt-Based Experimentation / PBX Starter tier, up to 50k MTUs) | **30-day free trial**: Capped at 3 experiments (10 trial generation credits) and 5,000 MTUs without code installation or credit card. | Privacy-first experimentation platform (HIPAA, GDPR, CCPA native), AI predictive personalization, and natural language Prompt-Based Experimentation. |
+| **[Instapage](https://instapage.com/)** | **~$19M–$21M Revenue** / Acquired by airSlate | **$99/mo** (Create plan; $79/mo billed annually); custom quotes for Enterprise A/B testing suite | **14-day free trial**: Capped at 2,500 unique visitors during the trial period; requires credit card upfront (auto-converts if not canceled). | High-converting landing page platform featuring server-side A/B/n split testing, AdMap 1:1 ad-to-page personalization, and collaborative page design. |
+| **[Crazy Egg](https://www.crazyegg.com/)** | **~$4.5M Revenue** / Founder-bootstrapped | **$29/mo** (Starter plan: 30k tracked pageviews/mo; billed annually at $348/yr) | **30-day free trial**: Includes 30k tracked pageviews, unlimited heatmaps, and recordings; requires credit card upfront (auto-bills annually unless canceled). | Visual analytics pioneer providing click heatmaps, scroll maps, confetti click segmentation, session replay recordings, and lightweight visual A/B testing. |
 
 ---
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven Website Optimization and A/B Testing tools. All listed projects offer source code you can deploy on your own infrastructure.
+Self-hosted, transparent, and community-driven experimentation and website optimization software. Projects are **sorted in descending order by GitHub stargazers count**.
 
-### Controlvar
-**Stack:** FastAPI / PostgreSQL / Redis | **License:** Apache-2.0  
-An open-source A/B testing and feature flag platform built for self-hosting with enterprise-grade statistics. The core profile includes frequentist and Bayesian analysis, sequential testing, CUPED variance reduction, multi-armed bandits, mutual exclusion groups, and global holdouts . Targeting supports 20+ operators, gradual rollouts, and per-flag safety monitoring with automatic rollback. Ships with 16 SDKs (JavaScript, Python, Go, and others) and deployment options via Docker Compose, Helm/Kubernetes, or AWS CDK. The project explicitly states it holds no SOC 2, ISO 27001, or HIPAA attestations and claims none .  
-**Best for:** Teams wanting a genuinely self-hosted experimentation platform with sophisticated statistics and no vendor lock-in.
-
-### Bucketeer
-**Stack:** Go / MySQL / Redis | **License:** Apache-2.0  
-An enterprise-grade feature flag management and A/B testing platform open-sourced by CyberAgent, battle-tested in production at scale (100M+ users, billions of evaluations) [citation:2][citation:11]. Features include role-based access control, complete audit logging, environment isolation, code references (detecting flag usage in source), stale flag detection, and an interactive debugger for testing flag evaluations without deploying. Deploys via Docker Compose for lightweight setups or Helm/Kubernetes for production. OpenFeature compatible with official SDKs for Android, iOS, JavaScript, Flutter, React, Go, and Node.js [citation:11].  
-**Best for:** Engineering teams wanting a production-proven, self-hosted feature flag platform with strong developer tooling and Kubernetes-native scaling.
-
-### GrowthBook
-**Stack:** TypeScript / MongoDB | **License:** MIT (core)  
-A warehouse-native experimentation platform that connects to your data warehouse (BigQuery, Snowflake, Databricks) for analysis rather than ingesting events. Features include feature flags, Bayesian and frequentist statistics, CUPED, sequential testing, and multi-armed bandits. The open-source core is MIT-licensed and self-hostable; advanced features like SSO and visual editor are gated to the commercial Enterprise edition. Often paired with frontend scaffolds like Astropress for project-level flag and experiment setup [citation:7].  
-**Best for:** Data teams whose primary need is rigorous experimentation tied to warehouse data, accepting that some conveniences require the paid tier.
-
-### OpenReplay
-**Stack:** Go / Python / React | **License:** Open Source (self-hosted)  
-An open-source session replay and product analytics platform that pairs with experimentation workflows. Features include session replay with DevTools (network, console, state, performance), heatmaps, funnels, and journeys [citation:28]. Privacy controls include capture-time sanitization, private mode (mask all text/inputs by default), and GDPR/CCPA tooling. While not a dedicated A/B testing engine, OpenReplay provides the behavioral data (recordings, funnels, heatmaps) that teams need to validate experiment hypotheses and understand why a variant won or lost. Self-hosted so session data never leaves your infrastructure .  
-**Best for:** Teams wanting self-hosted session replay and product analytics to complement their experimentation program without sending user data to a third party.
-
-### oss-clarity
-**Stack:** Python / Django | **License:** Open Source (per PyPI)  
-A self-hosted session replay, heatmap, and behavioral signal tool for Django sites. Adds one script tag to capture page views, clicks, scroll depth, and sampled session recordings (via rrweb) [citation:4]. Surfaces struggle signals including rage clicks, dead clicks, hesitations, and form abandons — exactly the behavioral indicators that inform A/B test hypotheses. Privacy-focused: form fields are always masked, no IP addresses stored, Global Privacy Control honored, and recordings deleted after 30 days by default. Early release (0.1.2) with notes that APIs may change [citation:4].  
-**Best for:** Django-based teams wanting lightweight, privacy-respecting behavioral analytics to inform optimization decisions.
-
-### Localess
-**Stack:** TypeScript / PostgreSQL/MySQL/SQLite | **License:** AGPL-3.0  
-A free, open-source website builder and CMS with a visual drag-and-drop editor, multilingual support, and **built-in A/B testing and analytics** [citation:22]. Combines page design, content management, and experimentation in a single self-hosted platform. Deploys on your own server or via Docker, with data stored in your choice of database. No paid tiers or feature restrictions — the entire platform is AGPL-3.0 with no open-core gating. The project is relatively new but actively growing.  
-**Best for:** Freelancers, small agencies, and site owners wanting an all-in-one self-hosted website builder with native A/B testing and no per-experiment costs.
-
-### modelab
-**Stack:** Python / FastAPI / PostgreSQL | **License:** Open Source (per PyPI)  
-A specialized A/B testing SDK and self-hosted dashboard for **LLM systems** rather than websites. Provides deterministic variant assignment (MD5 hashing into 10,000 buckets), rollout percentages, and per-variant evaluation of success rate, latency, cost, and token usage [citation:1]. Records execution metrics automatically for OpenAI and Anthropic response formats. Deploys with Docker Compose (PostgreSQL + FastAPI + React dashboard). Zero-dependency Python SDK.  
-**Best for:** Teams running A/B tests on LLM prompts, models, or configurations who want the same experimentation rigor applied to AI features.
+| Project | Stars | Stack | License | Description & Capabilities |
+|:---|:---:|:---|:---|:---|
+| **[PostHog](https://github.com/PostHog/posthog)** | [![PostHog Stars](https://img.shields.io/github/stars/PostHog/posthog?style=social&color=white)](https://github.com/PostHog/posthog/stargazers) | Python / ClickHouse / React / TypeScript | PostHog Open Source / Source Available | Unified product analytics and experimentation platform. Features native A/B and multivariate experimentation, feature flags, session replays, funnel analysis, and survey feedback. |
+| **[Unleash](https://github.com/Unleash/unleash)** | [![Unleash Stars](https://img.shields.io/github/stars/Unleash/unleash?style=social&color=white)](https://github.com/Unleash/unleash/stargazers) | Node.js / TypeScript / PostgreSQL | Apache-2.0 | Battle-tested enterprise feature toggle and experimentation management engine. Provides local SDK evaluation for sub-millisecond response, percentage split rollouts, and variant targeting. |
+| **[OpenReplay](https://github.com/openreplay/openreplay)** | [![OpenReplay Stars](https://img.shields.io/github/stars/openreplay/openreplay?style=social&color=white)](https://github.com/openreplay/openreplay/stargazers) | Go / Python / TypeScript / Docker | Open Source (ELv2) | Self-hosted session replay, heatmaps, and product performance analytics. Essential CRO companion that surfaces friction points, user struggle signals, and why experimental variants win or lose. |
+| **[GrowthBook](https://github.com/growthbook/growthbook)** | [![GrowthBook Stars](https://img.shields.io/github/stars/growthbook/growthbook?style=social&color=white)](https://github.com/growthbook/growthbook/stargazers) | TypeScript / Next.js / MongoDB | MIT (Core) | Warehouse-native A/B testing and feature flagging platform. Computes Bayesian/frequentist statistics, CUPED variance reduction, and multi-armed bandits directly inside Snowflake, BigQuery, ClickHouse, or Postgres. |
+| **[Flagsmith](https://github.com/Flagsmith/flagsmith)** | [![Flagsmith Stars](https://img.shields.io/github/stars/Flagsmith/flagsmith?style=social&color=white)](https://github.com/Flagsmith/flagsmith/stargazers) | Python / Django / PostgreSQL / React | BSD-3-Clause | Open-source feature flag and remote configuration platform with multivariate testing, user segment targeting, and seamless integrations with external analytics platforms. |
+| **[Flagger](https://github.com/fluxcd/flagger)** | [![Flagger Stars](https://img.shields.io/github/stars/fluxcd/flagger?style=social&color=white)](https://github.com/fluxcd/flagger/stargazers) | Go / Kubernetes CRDs | Apache-2.0 | Progressive delivery Kubernetes operator automating A/B testing, Canary deployments, and Blue/Green rollouts using service meshes (Istio, Linkerd) and ingress traffic routers. |
+| **[FeatBit](https://github.com/featbit/featbit)** | [![FeatBit Stars](https://img.shields.io/github/stars/featbit/featbit?style=social&color=white)](https://github.com/featbit/featbit/stargazers) | .NET / C# / TypeScript / MongoDB | MIT | Enterprise-grade, 100% self-hosted feature management and experimentation platform. Offers real-time feature flag evaluation, traffic splitting, and metric tracking. |
+| **[Sixpack](https://github.com/sixpack/sixpack)** | [![Sixpack Stars](https://img.shields.io/github/stars/sixpack/sixpack?style=social&color=white)](https://github.com/sixpack/sixpack/stargazers) | Python / Redis | BSD-2-Clause | Language-agnostic A/B testing framework developed by SeatGeek. Runs via an HTTP REST API and client-side libraries in JavaScript, Python, PHP, Ruby, and Go. |
+| **[Bucketeer](https://github.com/bucketeer-io/bucketeer)** | [![Bucketeer Stars](https://img.shields.io/github/stars/bucketeer-io/bucketeer?style=social&color=white)](https://github.com/bucketeer-io/bucketeer/stargazers) | Go / MySQL / Redis / gRPC | Apache-2.0 | Scalable feature flag and experimentation service built by CyberAgent, evaluated on 100M+ users. Features audit logging, OpenFeature compatibility, stale flag alerts, and multi-variant assignment. |
+| **[Localess](https://github.com/Lessify/localess)** | [![Localess Stars](https://img.shields.io/github/stars/Lessify/localess?style=social&color=white)](https://github.com/Lessify/localess/stargazers) | TypeScript / Angular / Firebase | AGPL-3.0 | Modern headless CMS and visual translation tool with built-in A/B testing, multi-language version experiments, and site content analytics. |
+| **[Controlvar](https://github.com/Controlvar/controlvar)** | [![Controlvar Stars](https://img.shields.io/github/stars/Controlvar/controlvar?style=social&color=white)](https://github.com/Controlvar/controlvar/stargazers) | FastAPI / PostgreSQL / Redis | Apache-2.0 | Lightweight self-hosted A/B testing framework supporting frequentist, Bayesian, sequential testing, CUPED variance reduction, and multi-armed bandit rollouts. |
+| **[oss-clarity](https://github.com/meharaj-007/oss-clarity)** | [![oss-clarity Stars](https://img.shields.io/github/stars/meharaj-007/oss-clarity?style=social&color=white)](https://github.com/meharaj-007/oss-clarity/stargazers) | Python / Django / rrweb | MIT | Self-hosted session replay, click heatmaps, and behavioral struggle signals (rage clicks, dead clicks, form abandons) for Django web applications. |
 
 ---
 
-## 📊 Comparison at a Glance
+## 📊 Feature Comparison Matrix
 
-| Software | License | Type | Experiment Engine | Behavioral Data | Self-Hosted | Best For |
-|----------|---------|------|-------------------|-----------------|-------------|----------|
-| **Zoho PageSense** | Proprietary | CRO suite | ✅ (Enterprise tier) | ✅ Heatmaps/replay | ❌ | Zoho ecosystem + analytics |
-| **Optimizely** | Proprietary | Enterprise experimentation | ✅ | Limited | ❌ | Large-scale enterprise testing |
-| **VWO** | Proprietary | All-in-one | ✅ | ✅ Heatmaps/replay | ❌ | Mid-market full suite |
-| **AB Tasty** | Proprietary | Experimentation | ✅ | Limited | ❌ | Modular mid-market |
-| **Kameleoon** | Proprietary | Privacy-first testing | ✅ | Limited | ❌ | Regulated industries |
-| **Unbounce** | Proprietary | Landing page testing | ✅ | Limited | ❌ | Paid acquisition campaigns |
-| **Crazy Egg** | Proprietary | Behavioral analytics | Limited | ✅ Heatmaps/replay | ❌ | Behavior-first optimization |
-| **Controlvar** | Apache-2.0 | Experimentation + flags | ✅ Full stats | ❌ | ✅ | Self-hosted rigorous testing |
-| **Bucketeer** | Apache-2.0 | Feature flags + A/B | ✅ | ❌ | ✅ | Production-proven flags at scale |
-| **GrowthBook** | MIT (core) | Warehouse-native | ✅ | ❌ | ✅ | Warehouse-tied experiments |
-| **OpenReplay** | Open Source | Session replay + analytics | ❌ (companion) | ✅ Replay/heatmaps | ✅ | Self-hosted behavioral data |
-| **oss-clarity** | Open Source | Session replay (Django) | ❌ (companion) | ✅ Replay/heatmaps | ✅ | Django privacy-first signals |
-| **Localess** | AGPL-3.0 | Website builder + testing | ✅ Built-in | ❌ | ✅ | All-in-one site + experiments |
-| **modelab** | Open Source | LLM A/B testing | ✅ LLM-focused | ❌ | ✅ | Testing AI prompts/models |
+| Platform / Tool | Type | License | Visual Editor | Server-Side SDKs | Statistical Engine | Behavioral Replay / Heatmaps | Self-Hosted Option | Primary Target Audience |
+|:---|:---|:---|:---:|:---:|:---|:---:|:---:|:---|
+| **Zoho PageSense** | CRO Suite | Proprietary | ✅ | ❌ | Frequentist | ✅ Native | ❌ | SMBs & Zoho ecosystem users |
+| **Dynamic Yield** | Personalization | Proprietary | ✅ | ✅ | Advanced Bayesian / ML | ❌ (Integration) | ❌ | Enterprise eCommerce & Omnichannel |
+| **Optimizely** | DXP Experimentation | Proprietary | ✅ | ✅ | Stats Engine (Sequential) | ❌ (Integration) | ❌ | Enterprise experimentation teams |
+| **VWO** | CRO Suite | Proprietary | ✅ | ✅ | SmartStats (Bayesian) | ✅ Native | ❌ | Mid-market to Enterprise marketing |
+| **AB Tasty** | CRO & Personalization| Proprietary | ✅ | ✅ | Bayesian & Bandits | ❌ (Integration) | ❌ | Mid-market product & growth teams |
+| **Unbounce** | Landing Page Builder | Proprietary | ✅ | ❌ | Smart Traffic (Bandit) | ❌ | ❌ | Performance marketers & PPC teams |
+| **Kameleoon** | CRO & Feature Flags | Proprietary | ✅ | ✅ | Frequentist & Bayesian | ❌ (Integration) | ❌ | Regulated industries (HIPAA/GDPR) |
+| **Instapage** | Landing Page Builder | Proprietary | ✅ | ❌ | Frequentist Split Test | ✅ Heatmaps | ❌ | Ad-spend performance marketers |
+| **Crazy Egg** | CRO Analytics | Proprietary | ✅ (Basic) | ❌ | Frequentist Split Test | ✅ Native | ❌ | Website owners, SMBs & agencies |
+| **PostHog** | Product Analytics | Source-Available | ❌ | ✅ | Frequentist & Bayesian | ✅ Native | ✅ | Full-stack developers & growth PMs |
+| **Unleash** | Feature Flags | Apache-2.0 | ❌ | ✅ | Percentage Traffic Split | ❌ | ✅ | Platform engineering & DevOps |
+| **OpenReplay** | Behavioral Analytics| Open Source | ❌ | ❌ | N/A (Diagnostic) | ✅ Native | ✅ | Security-conscious web developers |
+| **GrowthBook** | Warehouse Experiment | MIT (Core) | ✅ (Extension) | ✅ | Bayesian, Frequentist, CUPED | ❌ (Integration) | ✅ | Data teams & warehouse-first orgs |
+| **Flagsmith** | Feature Flags | BSD-3-Clause | ❌ | ✅ | Multivariate Split | ❌ | ✅ | App developers & engineering teams |
+| **Flagger** | Progressive Delivery| Apache-2.0 | ❌ | ❌ (K8s CRD)| Metric-driven Canary | ❌ | ✅ | SRE & Cloud Native engineers |
+| **FeatBit** | Feature Flags | MIT | ❌ | ✅ | Metric Evaluation | ❌ | ✅ | Internal enterprise tooling teams |
+| **Sixpack** | REST A/B Engine | BSD-2-Clause | ❌ | ✅ | Frequentist | ❌ | ✅ | Polyglot backend service developers |
+| **Bucketeer** | Feature Flags | Apache-2.0 | ❌ | ✅ | Frequentist | ❌ | ✅ | High-throughput distributed systems |
+| **Localess** | Headless CMS | AGPL-3.0 | ✅ | ❌ | Content Variant Split | ❌ | ✅ | Agencies & internationalized sites |
+| **Controlvar** | A/B Statistics | Apache-2.0 | ❌ | ✅ | Bayesian, CUPED, Bandits| ❌ | ✅ | Independent ML & data engineers |
+| **oss-clarity** | Behavioral Analytics| MIT | ❌ | ❌ | N/A (Diagnostic) | ✅ Native | ✅ | Privacy-focused Django developers |
+
+---
+
+## 🔍 Key Evaluation Criteria for CRO & Testing Tools
+
+When selecting an A/B testing or website optimization solution for your organization:
+
+1. **Client-Side vs. Server-Side Execution:**
+   - *Client-Side (DOM manipulation via JavaScript snippet):* Quick visual test setup, ideal for non-technical marketing teams (e.g., VWO, Zoho PageSense, Crazy Egg). Watch out for page flicker or Cumulative Layout Shift (CLS) penalties.
+   - *Server-Side / Feature Flags (API & SDKs):* Zero flicker, faster load speeds, and ability to test architectural changes, checkout flows, and backend algorithms (e.g., GrowthBook, Unleash, PostHog, Optimizely).
+2. **Data Governance & Warehouse-Native Analysis:**
+   - Avoid data duplication and vendor lock-in by evaluating whether the tool computes experiment metrics inside your cloud data warehouse (Snowflake, BigQuery, ClickHouse) or relies on proprietary event ingestion silos.
+3. **Statistical Methodology (Bayesian vs. Frequentist):**
+   - Sequential testing and variance reduction techniques (such as CUPED) allow teams to reach statistical significance faster without peeking bias or false-positive traps.
+4. **Behavioral Diagnostic Integration:**
+   - A/B testing answers *which* variation performed better; heatmaps, session recordings, and friction detection (rage clicks, form abandons) explain *why*. Look for native suites (PostHog, VWO, Zoho) or open-source pairings (OpenReplay + GrowthBook).
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Website Optimization or A/B Testing tool that should be listed here, please open a pull request with:
+Contributions, new tools, and updates are very welcome! If you know of an awesome Website Optimization, A/B Testing, or Feature Flagging project:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source. Note that the open-source ecosystem for dedicated A/B testing engines is smaller than for feature flags; many tools focus on behavioral analytics (session replay, heatmaps) that complement rather than replace experimentation platforms.
+1. Fork this repository.
+2. Add the tool to the appropriate section in the existing table format.
+3. For open-source repos, ensure you include the official star badge linking to the `/stargazers` page, and maintain sorted order.
+4. Submit a Pull Request with a short summary of why the tool is a great addition!
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+This repository and curated list are released under the [CC0 1.0 Universal (Public Domain)](LICENSE) dedication. Listed software platforms and projects retain their respective licenses and trademarks.
 
 ---
 
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+⭐ **Found this guide helpful? Give it a star to help other engineers, marketers, and data teams find the best experimentation tools!** ⭐
