@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360">
+  <defs>
+    <!-- Background Linear Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accentGradA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.3" />
+    </linearGradient>
+
+    <linearGradient id="accentGradB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.4" />
+    </linearGradient>
+
+    <linearGradient id="badgeGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+
+    <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.3" />
+    </pattern>
+
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.65; transform: scale(1.05); }
+      }
+      @keyframes floatCardA {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes floatCardB {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(8px); }
+      }
+      @keyframes flowCurve {
+        0% { stroke-dashoffset: 400; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes barGrow {
+        0%, 100% { height: 60px; y: 220px; }
+        50% { height: 95px; y: 185px; }
+      }
+      @keyframes radarSweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .glow-blob {
+        animation: pulseGlow 6s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .card-a {
+        animation: floatCardA 5s ease-in-out infinite;
+      }
+      .card-b {
+        animation: floatCardB 6s ease-in-out infinite;
+      }
+      .flow-line {
+        stroke-dasharray: 20, 10;
+        animation: flowCurve 12s linear infinite;
+      }
+      .dynamic-bar {
+        animation: barGrow 4s ease-in-out infinite;
+      }
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+      }
+      .sub-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="360" rx="16" fill="url(#gridPattern)" />
+
+  <!-- Dynamic Ambient Glowing Orbs in Background -->
+  <circle cx="150" cy="80" r="140" fill="#38bdf8" filter="url(#glowFilter)" class="glow-blob" opacity="0.3" />
+  <circle cx="1080" cy="280" r="160" fill="#818cf8" filter="url(#glowFilter)" class="glow-blob" opacity="0.35" />
+  <circle cx="950" cy="70" r="100" fill="#10b981" filter="url(#glowFilter)" class="glow-blob" opacity="0.25" />
+
+  <!-- Background Dynamic Flow Spline Lines -->
+  <path d="M -50 280 C 300 240, 450 330, 800 270 C 1000 230, 1150 310, 1250 250" fill="none" stroke="#4f46e5" stroke-width="2" opacity="0.4" class="flow-line" />
+  <path d="M -50 220 C 250 180, 550 260, 850 190 C 1050 150, 1180 210, 1250 170" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.35" class="flow-line" />
+
+  <!-- DYNAMIC ELEMENT 1: Animated Analytics / Lift Comparison Chart (Right Side) -->
+  <g transform="translate(850, 55)" class="card-a">
+    <!-- Card Container -->
+    <rect width="290" height="235" rx="14" fill="#0f172a" fill-opacity="0.85" stroke="#334155" stroke-width="1.5" />
+    
+    <!-- Card Header -->
+    <circle cx="24" cy="24" r="5" fill="#ef4444" />
+    <circle cx="40" cy="24" r="5" fill="#f59e0b" />
+    <circle cx="56" cy="24" r="5" fill="#10b981" />
+    <text x="80" y="28" fill="#94a3b8" font-size="12" class="sub-text" font-weight="600">A/B EXPERIMENT MONITOR</text>
+
+    <!-- Variation A (Control) -->
+    <g transform="translate(30, 55)">
+      <text x="0" y="16" fill="#94a3b8" font-size="12" class="sub-text">Control (A)</text>
+      <text x="0" y="34" fill="#f1f5f9" font-size="18" class="title-text" font-weight="700">3.42%</text>
+      <rect x="0" y="44" width="95" height="8" rx="4" fill="#334155" />
+      <rect x="0" y="44" width="48" height="8" rx="4" fill="#64748b" />
+    </g>
+
+    <!-- Variation B (Variant / Winner) -->
+    <g transform="translate(155, 55)">
+      <text x="0" y="16" fill="#34d399" font-size="12" class="sub-text" font-weight="700">Variant (B) ★</text>
+      <text x="0" y="34" fill="#10b981" font-size="18" class="title-text" font-weight="700">5.89%</text>
+      <rect x="0" y="44" width="95" height="8" rx="4" fill="#334155" />
+      <rect x="0" y="44" width="82" height="8" rx="4" fill="#10b981" />
+    </g>
+
+    <!-- Conversion Lift Badge Pill -->
+    <g transform="translate(30, 125)">
+      <rect width="230" height="32" rx="8" fill="#065f46" fill-opacity="0.6" stroke="#10b981" stroke-width="1" />
+      <text x="115" y="20" fill="#a7f3d0" font-size="12" class="title-text" font-weight="700" text-anchor="middle">⚡ +72.2% Lift • 99.8% Confidence</text>
+    </g>
+
+    <!-- Dynamic Mini Histogram Bars -->
+    <g transform="translate(35, 175)">
+      <rect x="0" y="28" width="16" height="22" rx="3" fill="#64748b" opacity="0.6" />
+      <rect x="24" y="22" width="16" height="28" rx="3" fill="#64748b" opacity="0.7" />
+      <rect x="48" y="16" width="16" height="34" rx="3" fill="#38bdf8" opacity="0.8" />
+      <rect x="72" y="10" width="16" height="40" rx="3" fill="#38bdf8" />
+      <rect x="96" y="8" width="16" height="42" rx="3" fill="#818cf8" />
+      <rect x="120" y="14" width="16" height="36" rx="3" fill="#818cf8" />
+      <rect x="144" y="4" width="16" height="46" rx="3" fill="#34d399" />
+      <rect x="168" y="0" width="16" height="50" rx="3" fill="#10b981" class="dynamic-bar" />
+      <rect x="192" y="2" width="16" height="48" rx="3" fill="#10b981" />
+    </g>
+  </g>
+
+  <!-- DYNAMIC ELEMENT 2: Small Floating Feature Flag Toggle Card (Bottom Center) -->
+  <g transform="translate(560, 245)" class="card-b">
+    <rect width="240" height="74" rx="12" fill="#0f172a" fill-opacity="0.9" stroke="#4f46e5" stroke-width="1.2" />
+    <circle cx="28" cy="37" r="14" fill="#4f46e5" fill-opacity="0.4" />
+    <path d="M 23 37 L 27 41 L 34 33" fill="none" stroke="#818cf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="52" y="32" fill="#f8fafc" font-size="12" class="title-text" font-weight="700">Dynamic Feature Flag</text>
+    <text x="52" y="48" fill="#94a3b8" font-size="10" class="sub-text">Traffic Split: 50% Control / 50% Test</text>
+    <circle cx="215" cy="37" r="7" fill="#10b981" />
+    <circle cx="215" cy="37" r="11" fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.5" class="glow-blob" />
+  </g>
+
+  <!-- FOREGROUND: Hero Title, Subtitle, and Tag Pills (Guaranteed High Contrast & Prominence) -->
+  <g transform="translate(60, 68)">
+    
+    <!-- Top Pill Badge -->
+    <g transform="translate(0, 0)">
+      <rect width="295" height="30" rx="15" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2" />
+      <circle cx="16" cy="15" r="5" fill="#38bdf8" />
+      <text x="30" y="20" fill="#c7d2fe" font-size="11" class="title-text" font-weight="700" letter-spacing="0.5">🚀 THE EXPERIMENTATION DIRECTORY</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="80" fill="#ffffff" font-size="44" class="title-text">
+      Website Optimization &amp;
+    </text>
+    <text x="0" y="132" fill="url(#primaryGrad)" font-size="46" class="title-text">
+      A/B Testing Tools
+    </text>
+
+    <!-- Subtitle / Value Proposition -->
+    <text x="0" y="172" fill="#94a3b8" font-size="15" class="sub-text">
+      A curated collection of enterprise SaaS platforms, feature flag engines,
+    </text>
+    <text x="0" y="194" fill="#cbd5e1" font-size="15" class="sub-text">
+      and open-source experimentation frameworks for high-converting teams.
+    </text>
+
+    <!-- Category Pill Badges in Foreground -->
+    <g transform="translate(0, 222)">
+      <!-- Pill 1: A/B Testing -->
+      <rect x="0" y="0" width="105" height="28" rx="14" fill="#0369a1" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1" />
+      <text x="52" y="18" fill="#7dd3fc" font-size="12" class="title-text" font-weight="600" text-anchor="middle">🧪 A/B Testing</text>
+
+      <!-- Pill 2: CRO -->
+      <rect x="115" y="0" width="135" height="28" rx="14" fill="#4338ca" fill-opacity="0.3" stroke="#818cf8" stroke-width="1" />
+      <text x="182" y="18" fill="#c7d2fe" font-size="12" class="title-text" font-weight="600" text-anchor="middle">🎯 CRO &amp; Analytics</text>
+
+      <!-- Pill 3: Feature Flags -->
+      <rect x="260" y="0" width="125" height="28" rx="14" fill="#047857" fill-opacity="0.3" stroke="#34d399" stroke-width="1" />
+      <text x="322" y="18" fill="#a7f3d0" font-size="12" class="title-text" font-weight="600" text-anchor="middle">🚩 Feature Flags</text>
+
+      <!-- Pill 4: Open Source -->
+      <rect x="395" y="0" width="120" height="28" rx="14" fill="#6d28d9" fill-opacity="0.3" stroke="#c084fc" stroke-width="1" />
+      <text x="455" y="18" fill="#e9d5ff" font-size="12" class="title-text" font-weight="600" text-anchor="middle">⚡ Open-Source</text>
+    </g>
+  </g>
+</svg>
