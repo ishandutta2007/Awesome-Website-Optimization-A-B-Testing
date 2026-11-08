@@ -2,7 +2,7 @@
 
 <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
 <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-<a href="https://github.com/ishandutta2007/Awesome-Website-Optimization-A-B-Testing/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Website-Optimization-A-B-Testing?style=social" alt="GitHub Stars" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Website-Optimization-A-B-Testing/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Website-Optimization-A-B-Testing?style=social" alt="GitHub_Stars" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Website-Optimization-A-B-Testing/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Website-Optimization-A-B-Testing?style=social" alt="GitHub Forks" /></a>
 <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
@@ -68,7 +68,7 @@ Below is a detailed breakdown of leading commercial Website Optimization and A/B
 
 Self-hosted, transparent, and community-driven experimentation and website optimization software. Projects are **sorted in descending order by GitHub stargazers count**.
 
-| 💻 Project | ⭐ Stars | 🛠️ Tech Stack | 📜 License | 📝 Description & Capabilities |
+| 💻 Project | ⭐ GitHub_Stars | 🛠️ Tech Stack | 📜 License | 📝 Description & Capabilities |
 |:---|:---:|:---|:---|:---|
 | **[PostHog](https://github.com/PostHog/posthog)** | [![PostHog Stars](https://img.shields.io/github/stars/PostHog/posthog?style=social&color=white)](https://github.com/PostHog/posthog/stargazers) | Python / ClickHouse / React / TypeScript | PostHog Open Source / Source Available | Unified product analytics and experimentation platform. Features native A/B and multivariate experimentation, feature flags, session replays, funnel analysis, and survey feedback. |
 | **[Unleash](https://github.com/Unleash/unleash)** | [![Unleash Stars](https://img.shields.io/github/stars/Unleash/unleash?style=social&color=white)](https://github.com/Unleash/unleash/stargazers) | Node.js / TypeScript / PostgreSQL | Apache-2.0 | Battle-tested enterprise feature toggle and experimentation management engine. Provides local SDK evaluation for sub-millisecond response, percentage split rollouts, and variant targeting. |
@@ -161,7 +161,7 @@ Contributions, new tools, and updates are very welcome! If you know of an awesom
 
 1. 🍴 Fork this repository.
 2. 📝 Add the tool to the appropriate section in the existing table format.
-3. ⭐ For open-source repos, ensure you include the official star badge linking to the `/stargazers` page, and maintain sorted order.
+3. ⭐ For open-source repos, ensure you include the official Stars_Badge linking to the `/stargazers` page, and maintain sorted order.
 4. 🚀 Submit a Pull Request with a short summary of why the tool is a great addition!
 
 ---
